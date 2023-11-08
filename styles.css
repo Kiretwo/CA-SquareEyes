@@ -14,7 +14,7 @@ body {
 
 /* HEADER */
 
-li, .header-link, button {
+.header-li, .header-link, .sign-up-li, button {
   font-family: 'Montserrat', sans-serif, Arial;
   font-weight: 600;
   font-size: 16px;
@@ -23,7 +23,11 @@ li, .header-link, button {
 }
 
 header {
-  position: relative;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 10;
   background-color: #FFD700;
   display: flex;
   justify-content: space-between;
@@ -47,6 +51,7 @@ nav, #menu-checkbox {
 
 #menu-checkbox:checked ~ nav {
   display: block;
+  z-index: 10;
 }
 
 nav {
@@ -122,11 +127,24 @@ nav a {
 /* MAIN BODY */
 
 .main-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 40px;
   padding-left: 5%;
   padding-right: 5%;
 }
+
+/* MOVIE HERO */
+
+.movie-hero-banner {
+  cursor: pointer;
+  margin-top: 103px;
+}
+
+.movie-hero-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* MOVIE CARD */
 
@@ -242,6 +260,46 @@ nav a {
   border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
+}
+
+/* FOOTER */
+
+.footer-box {
+  background-color: #1d2e4b; 
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 20%;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.footer-socials i {
+  color: #ffffff;
+  font-size: 2em;
+  border-radius: 40%;
+}
+
+.footer-text ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.footer-text ul li a {
+  color: #ffffff;
+  margin: 20px;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-size: 1em;
+  opacity: 80%;
+}
+
+.footer-text ul li a:hover {
+  text-decoration: underline;
+  opacity: 100%;
 }
 
 /* ---DESKTOP VERSION--- */
