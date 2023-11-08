@@ -38,6 +38,7 @@ header {
   color: #FFFFFF;
   font-size: 2rem;
   padding-top: 25px;
+  cursor: pointer;
 }
 
 nav, #menu-checkbox {
@@ -204,6 +205,43 @@ nav a {
   text-align: center;
   padding-bottom: 10px;
   line-height: 169%;
+}
+
+/* BELOW MOVIE CARDS */
+
+.collection-banner {
+  position: relative;
+}
+
+.collection-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.collection-text {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  color: #0E1C36;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  row-gap: 6px;
+
+  font-family: 'Montserrat', sans-serif, Arial;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.explore-more-button {
+  background-color: #0E1C36;
+  color: #FFFFFF;
+  padding: 8px 124px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 /* ---DESKTOP VERSION--- */
