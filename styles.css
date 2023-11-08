@@ -133,7 +133,7 @@ nav a {
   padding-right: 5%;
 }
 
-/* MOVIE HERO */
+/* MOVIE HERO BANNER */
 
 .movie-hero-banner {
   cursor: pointer;
@@ -292,8 +292,9 @@ nav a {
   color: #ffffff;
   margin: 20px;
   text-decoration: none;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif, Arial;
   font-size: 1em;
+  font-weight: 400;
   opacity: 80%;
 }
 
@@ -301,6 +302,23 @@ nav a {
   text-decoration: underline;
   opacity: 100%;
 }
+
+.footer-text-2 {
+  padding-top: 15px;
+}
+
+.footer-copyright {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif, Arial;
+  font-size: 0.65em;
+  opacity: 80%;
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+
+
 
 /* ---DESKTOP VERSION--- */
 
