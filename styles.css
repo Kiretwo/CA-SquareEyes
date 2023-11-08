@@ -169,23 +169,41 @@ nav a {
   grid-auto-columns: 28%;
   column-gap: 16px;
   row-gap: 40px;
-  
+  margin-bottom: 6px;
+  /* scroll carousel taken from https://www.youtube.com/watch?v=3yfswsnD2sw */
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.movie-picture-square {
-  margin-bottom: 6px
+.movie-grid ::-webkit-scrollbar {
+  display: none;
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
+  scroll-padding-inline: 1rem;
 }
 
 .movie-picture {
-  width: 100%
+  inline-size: 100%;
+  aspect-ratio: 0.63 / 1;
+  object-fit: cover;
 }
 
 .movie-title {
   color: white;
   font-family: 'Montserrat', sans-serif, Arial;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 11px;
   text-align: center;
+  padding-bottom: 10px;
+  line-height: 169%;
 }
 
 /* ---DESKTOP VERSION--- */
