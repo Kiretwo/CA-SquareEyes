@@ -83,7 +83,7 @@ nav a {
   padding-right: 20px;
 }
 
-.nav-links .header-li .header-link {
+.header-li .header-link {
   opacity: 80%;
 }
 
@@ -327,11 +327,16 @@ footer {
 
 /* HEADER MQ */
 
-@media (min-width: 840px) {
+@media (min-width: 900px) {
+  header {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  
   .hamburger-menu {
     display: none;
   }
-  
+
   #menu-checkbox:checked ~ nav {
     display: inline-block;
     z-index: auto;
@@ -341,6 +346,7 @@ footer {
     position: static;
     background-color: #FFD700;
     width: auto;
+    display: inline-block;
   }
   
   .nav-links, .sign-up-li  {
@@ -365,8 +371,8 @@ footer {
   }
     
   .logo {
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: auto;
+    margin-left: 0px;
   }
   
   /* MOVIE HERO BANNER MQ */
