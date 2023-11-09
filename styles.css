@@ -14,8 +14,8 @@ body {
   min-height: 100vh;
 }
 
-/* __MOBILE FIRST STYLING__ */
-
+/* !MOBILE FIRST STYLING! */
+/* ________INDEX.HTML________ */
 /* HEADER */
 
 .header-li, .header-link, .sign-up-li, button {
@@ -323,8 +323,8 @@ footer {
 
 
 
-/* __DESKTOP MEDIA QUERY__ */
-
+/* !DESKTOP MEDIA QUERY! */
+/* ________INDEX.HTML________ */
 /* HEADER MQ */
 
 @media (min-width: 900px) {
@@ -443,3 +443,21 @@ footer {
   }
 
 }
+
+
+
+/* ________EXPLORE.HTML________ */
+/* HEADING */
+.explore-heading {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.explore-h1 {
+  color: white;
+  font-family: 'Poppins', sans-serif, Arial;
+  font-size: 24px
+}
+/* MAIN GRID */
