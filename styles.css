@@ -8,9 +8,13 @@
 
 body {
   background-color: #0E1C36;
+  margin-top: 103px;
+  position: relative;
+  padding-bottom: 225px;
+  min-height: 100vh;
 }
 
-/* MOBILE FIRST STYLING */
+/* __MOBILE FIRST STYLING__ */
 
 /* HEADER */
 
@@ -137,7 +141,7 @@ nav a {
 
 .movie-hero-banner {
   cursor: pointer;
-  margin-top: 103px;
+  /*margin-top: 103px;*/
   margin-bottom: 5px;
 }
 
@@ -254,8 +258,17 @@ nav a {
 
 /* FOOTER */
 
+footer {
+  /* Keeping Footer at the Bottom of the Page 
+  yt-link:https://www.youtube.com/watch?v=US_3XvufMLU 
+  rest of code under GENERAL body*/
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .footer-box {
-  background-color: #1d2e4b; 
+  background-color: #1d2e4b;
 }
 
 .footer-socials {
@@ -310,7 +323,9 @@ nav a {
 
 
 
-/* ---DESKTOP VERSION--- */
+/* __DESKTOP MEDIA QUERY__ */
+
+/* HEADER MQ */
 
 @media (min-width: 840px) {
   .hamburger-menu {
@@ -327,7 +342,7 @@ nav a {
     background-color: #FFD700;
     width: auto;
   }
-
+  
   .nav-links, .sign-up-li  {
     display: flex;
     align-items: center;
@@ -353,8 +368,8 @@ nav a {
     margin-right: 0;
     margin-left: 0;
   }
-
-  /* MOVIE HERO BANNER */
+  
+  /* MOVIE HERO BANNER MQ */
   
   .movie-hero-banner {
     margin-bottom: 20px;
@@ -363,7 +378,7 @@ nav a {
     place-items: center;
   }
   
-  /* MOVIE CARD */
+  /* MOVIE CARD MQ */
   
   .movie-showcase-header {
     font-size: 24px;
@@ -381,7 +396,7 @@ nav a {
     font-size: 16px;
   }
   
-  /* BELOW MOVIE CARDS */
+  /* BELOW MOVIE CARDS MQ */
   
   .collection-banner {
     margin-top: 40px;
@@ -396,12 +411,12 @@ nav a {
     padding: 10px 164px;
     font-size: 20px;
   }
-
+  
   .explore-more-button:hover {
     opacity: 93%;
   }
   
-  /* FOOTER */
+  /* FOOTER MQ */
   
   .footer-socials {
     padding: 0px 40%;
@@ -416,7 +431,7 @@ nav a {
   .footer-text ul li a {
     font-size: 0.9em;
   }
-
+  
   .footer-copyright {
     font-size: 0.6em;
   }
