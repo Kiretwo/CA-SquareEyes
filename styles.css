@@ -10,7 +10,7 @@ body {
   background-color: #0E1C36;
 }
 
-/* ---MOBILE VERSION--- */
+/* MOBILE FIRST STYLING */
 
 /* HEADER */
 
@@ -160,17 +160,7 @@ nav a {
   padding-bottom: 5px;
 }
 
-.movie-showcase-title-link {
-  text-decoration: none;
-  color: white;
-}
-
-.movie-picture-link {
-  text-decoration: none;
-  color: white;
-}
-
-.movie-title-link {
+.movie-showcase-title-link, .movie-picture-link, .movie-title-link {
   text-decoration: none;
   color: white;
 }
@@ -193,8 +183,6 @@ nav a {
   /* scroll carousel taken from https://www.youtube.com/watch?v=3yfswsnD2sw */
   overflow-x: auto;
   overscroll-behavior-inline: contain;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 .movie-grid ::-webkit-scrollbar {
@@ -230,6 +218,8 @@ nav a {
 
 .collection-banner {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .collection-banner img {
@@ -247,7 +237,6 @@ nav a {
   grid-template-columns: 1fr;
   place-items: center;
   row-gap: 6px;
-
   font-family: 'Montserrat', sans-serif, Arial;
   font-weight: 600;
   font-size: 20px;
@@ -365,200 +354,71 @@ nav a {
     margin-left: 0;
   }
 
-
-
-  /* MAIN BODY */
-  
-  .main-body {
-    padding-top: 0px;
-    padding-bottom: 40px;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  
   /* MOVIE HERO BANNER */
   
   .movie-hero-banner {
-    cursor: pointer;
-    margin-top: 103px;
-    margin-bottom: 20px
-  }
-  
-  .movie-hero-banner img {
-    max-width: 100%;
-    height: auto;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
   }
   
   /* MOVIE CARD */
   
   .movie-showcase-header {
-    color: white;
-    font-family: 'Poppins', sans-serif, Arial;
-    font-size: 16px;
-    font-weight: 600;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding-bottom: 5px;
-  }
-  
-  .movie-showcase-title-link {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .movie-picture-link {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .movie-title-link {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .movie-showcase-title {
-    display: flex;
-  }
-  
-  .movie-showcase-chevron {
-    padding-left: 10px;
+    font-size: 24px;
   }
   
   .movie-grid {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 28%;
-    column-gap: 16px;
-    row-gap: 40px;
-    margin-bottom: 6px;
-    /* scroll carousel taken from https://www.youtube.com/watch?v=3yfswsnD2sw */
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 25px;
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
   
-  .movie-grid ::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .snaps-inline {
-    scroll-snap-type: inline mandatory;
-  }
-  
-  .snaps-inline > * {
-    scroll-snap-align: start;
-    scroll-padding-inline: 1rem;
-  }
-  
-  .movie-picture {
-    inline-size: 100%;
-    aspect-ratio: 0.63 / 1;
-    object-fit: cover;
-  }
-  
   .movie-title {
-    color: white;
-    font-family: 'Montserrat', sans-serif, Arial;
-    font-weight: 700;
-    font-size: 11px;
-    text-align: center;
-    padding-bottom: 10px;
-    line-height: 169%;
+    font-size: 16px;
   }
   
   /* BELOW MOVIE CARDS */
   
   .collection-banner {
-    position: relative;
-  }
-  
-  .collection-banner img {
-    max-width: 100%;
-    height: auto;
+    margin-top: 40px;
   }
   
   .collection-text {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    color: #0E1C36;
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    row-gap: 6px;
-  
-    font-family: 'Montserrat', sans-serif, Arial;
-    font-weight: 600;
-    font-size: 20px;
+    margin-top: 5%;
+    font-size: 26px;
   }
   
   .explore-more-button {
-    background-color: #0E1C36;
-    color: #FFFFFF;
-    padding: 8px 124px;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 10px 164px;
+    font-size: 20px;
+  }
+
+  .explore-more-button:hover {
+    opacity: 93%;
   }
   
   /* FOOTER */
   
-  .footer-box {
-    background-color: #1d2e4b; 
-  }
-  
   .footer-socials {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0px 20%;
+    padding: 0px 40%;
     padding-top: 40px;
     padding-bottom: 30px;
   }
   
   .footer-socials i {
-    color: #ffffff;
-    font-size: 1.8em;
-    border-radius: 40%;
-  }
-  
-  .footer-text ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+    font-size: 2em;
   }
   
   .footer-text ul li a {
-    color: #ffffff;
-    margin: 10px;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif, Arial;
-    font-size: 0.8em;
-    font-weight: 400;
-    opacity: 80%;
+    font-size: 0.9em;
   }
-  
-  .footer-text ul li a:hover {
-    text-decoration: underline;
-    opacity: 100%;
-  }
-  
-  .footer-text-2 {
-    padding-top: 15px;
-  }
-  
+
   .footer-copyright {
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif, Arial;
-    font-size: 0.5em;
-    opacity: 80%;
-    display: flex;
-    justify-content: center;
-    padding-top: 35px;
-    padding-bottom: 25px;
+    font-size: 0.6em;
   }
 
 }
