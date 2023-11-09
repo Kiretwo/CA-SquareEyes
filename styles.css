@@ -14,16 +14,19 @@ body {
   min-height: 100vh;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* !MOBILE FIRST STYLING! */
 /* ________INDEX.HTML________ */
 /* HEADER */
 
-.header-li, .header-link, .sign-up-li, button {
+.header-li, .header-link, .sign-up-li {
   font-family: 'Montserrat', sans-serif, Arial;
   font-weight: 600;
   font-size: 16px;
   color: #0E1C36;
-  text-decoration: none;
 }
 
 header {
