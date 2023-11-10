@@ -495,3 +495,68 @@ footer {
   font-size: 0.9rem;
   text-align: center;
 }
+
+
+
+/* ________ABOUT.HTML________ */
+/* GENERAL */
+.about-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 200px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.about-heading, .about-subheading, .about-text {
+  font-family: 'Montserrat', sans-serif, Arial;
+  color: #0E1C36;
+}
+
+/* SECTION */
+.about-section {
+  background-color: white;
+  border-radius: 10px;
+  height: auto;
+  max-width: 500px;
+}
+
+.about-text-area {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+.about-heading, .about-subheading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.about-subheading {
+  font-size: 1.15rem;
+}
+
+.about-text {
+  line-height: 175%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+
+/* !DESKTOP MEDIA QUERY! */
+/* ________ABOUT.HTML________ */
+/* SECTION */
+@media (min-width: 900px) {
+  .about-section {
+    margin-left: 30%;
+    margin-right: 30%;
+    max-width: 1000px;
+  }
+}
