@@ -452,8 +452,8 @@ footer {
 /* ________EXPLORE.HTML________ */
 /* HEADING */
 .explore-heading {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 0px;
   display: flex;
   justify-content: center;
 }
@@ -461,6 +461,37 @@ footer {
 .explore-h1 {
   color: white;
   font-family: 'Poppins', sans-serif, Arial;
-  font-size: 24px
+  font-size: 2rem;
 }
 /* MAIN GRID */
+.explore-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.explore-card {
+  margin: 20px;
+  width: 200px;
+  height: 360px;
+}
+
+.img-container {
+  margin-bottom: 6px;
+}
+
+.img-container img {
+  inline-size: 100%;
+  aspect-ratio: 0.63 / 1;
+  object-fit: cover;
+}
+
+.explore-title {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif, Arial;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-align: center;
+}
