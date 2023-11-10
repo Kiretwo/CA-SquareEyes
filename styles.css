@@ -138,6 +138,8 @@ nav a {
   padding-bottom: 40px;
   padding-left: 5%;
   padding-right: 5%;
+  display: grid;
+  justify-content: center;
 }
 
 /* MOVIE HERO BANNER */
@@ -470,6 +472,7 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 10px;
+  max-width: 1000px;
 }
 
 .explore-card {
